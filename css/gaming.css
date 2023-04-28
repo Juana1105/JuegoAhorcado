@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-cabecera{
+    width: 54%;
+    margin: 0 auto;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    background-color:rgb(8, 103, 192); 
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    box-shadow: 0 5px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.contenedor-cabecera h1{
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.contenedor-cabecera h2{
+    margin: 1em 0.5em;
+    text-shadow: 2px 2px 2px rgb(63, 62, 62);
+}
+
+
+.contenedor-principal{
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 50%;
+    background-color: rgba(112, 54, 25,0.5);
+    box-shadow: 0 5px 10px black;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.contenedor-secundario{
+    margin: 1em auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.contenedor-palabra{
+    width: 100%;
+    margin: 1em 0.5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.card{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin: 0.5em;
+    
+
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(8, 103, 192);
+    
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+h3{
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    object-fit: cover;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    
+}
+
+/* .card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+} */
+
+.contenedor-abc{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    
+}
+.contenedor-btn{
+    margin: 0.3em;
+}
+
+.btn-letra, .fallo, .acierto{
+    width: 4em;
+    height: 4em;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 10px black;
+}
+
+.btn-letra{
+    background-color: rgb(8, 103, 192);
+}
+
+.acierto{
+    background-color: rgb(13, 168, 13);
+}
+
+.fallo{
+    background-color: rgb(212, 12, 12);
+}
+
+.btn-letra:hover{
+    transform: scale(1.2);
+}
+.contenedor-imagen{
+    width: 50%;
+    min-width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    
+}
+.imagen{
+    width:70%;
+    min-height: 28.125em;
+    border-radius: 1em;
+    background-color: white;
+    background-image: url("../images/el-ahorcado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px;
+}
+
+footer{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: -1;
+}
+
+footer img{
+    position:absolute;
+    top: 3px;
+}
+
+svg{
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    width: 100%;
+    margin-top: 3em;
+    z-index: -1;
+}
+
+footer h2{
+    position: absolute;
+    color: black;
+    font-size: 7em;
+    z-index: 99;
+    color: white;
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+    
+}
+h2.foot-izq{
+    bottom: 0.2em;
+    left: 1em;
+}
+
+h2.foot-der{
+    bottom: 0.2em;
+    right: 1em;
+      
+}
+.final-partida-i{
+    display: none;
+}
+
+.final-partida{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(8, 103, 192,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.final-partida h1{
+    margin-bottom: 2em;
+    font-size: 7em;
+    text-shadow: 2px 2px 2px white;
+}
+
+.final-partida .salir-new{
+    width: 30%;
+    background-color: #6B3519;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3em;
+    padding: 1em;
+    border: 5px solid black;
+    box-shadow:  0 5px 10px black;;
+
+}
+
+.final-partida .salir-new h2{
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 2px white;
+
+}
+
+.final-partida .salir-new h3{
+    text-align: left;
+    margin-left: 1em;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 2px white;
+
+}
+
+.final-partida .salir-new form{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #30170b;
+    border-radius: 1em;
+    display:flex;
+    justify-content: space-around;
+    padding: 1em;
+    border: 5px solid black;
+    box-shadow:  0 5px 10px black;;
+}
+.final-partida .salir-new form input{
+    margin: 0.3em;
+    width: 40%;
+    background-color: rgb(8, 103, 192);
+    border-radius: 1em;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow:  0 5px 10px black;;
+}
+
+.final-partida .salir-new form input:hover{
+
+    background-color: rgb(9, 61, 109);
+    
+}

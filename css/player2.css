@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-cabecera {
+    width: 54%;
+    margin: 0 auto;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    background-color: rgb(8, 103, 192);
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    box-shadow: 0 5px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.contenedor-cabecera h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.contenedor-cabecera h2 {
+    margin: 1em 0.5em;
+    text-shadow: 2px 2px 2px rgb(63, 62, 62);
+}
+
+.contenedor-principal {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 50%;
+    background-color: rgba(8, 103, 192, 0.178);
+    box-shadow: 0 5px 10px black;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.titulo {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.editar_datos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.editar_datos label{
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: .3em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.editar_datos input[type="text"], input[type="email"]{
+    width: 50%;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    border-radius: 1em;
+
+}
+
+.editar_datos .botones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.editar_datos .botones input[type="submit"]{
+    width: 25%;
+    margin: 1em;
+    padding: 0.5em 1em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    border-radius: 1em;
+    border: none;
+    background-color: white;
+    color: navy;
+    
+}
+
+.editar_datos .botones input[type="submit"]:hover{
+    background-color: navy;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+}
+
+.editar_datos .botones input[type="submit"]:active{
+    transform: translateY(0.2em);
+}
+
+
+.editar_pass{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.editar_pass label{
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: .3em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.editar_pass input[type="password"]{
+    width: 50%;
+    padding: 0.5em 1em;
+    font-size: 1.3em;
+    border-radius: 1em;
+
+}
+
+hr{
+    color: white;
+}
+.editar_pass input[type="submit"]{
+    
+    margin: 1em;
+    padding: 0.5em 1em;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    border-radius: 1em;
+    border: none;
+    background-color: white;
+    color: navy;
+    
+}
+
+.editar_pass input[type="submit"]:hover{
+    background-color: navy;
+    color: white;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+}
+
+.editar_pass  input[type="submit"]:active{
+    transform: translateY(0.2em);
+}
+
+.update{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: green;
+}
+
+.update-error{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: red;
+}
+
+footer {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3em;
+    position: relative;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+footer svg {
+    
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+#marca{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.menu_player{
+    position: fixed;
+    top: 40%;
+    left: -11em;
+    width: 12em;
+    background-color: rgb(8, 103, 192);
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    box-shadow: 5px 5px 15px 5px #000000;
+
+}
+
+.menu_player ul{
+    width: 100%;
+    list-style: none;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.menu_player ul li{
+    width: 100%;
+    border-bottom: 1px solid navy;
+}
+
+.menu_player ul li:first-child{
+    border-top-right-radius: 1em;
+}
+
+.menu_player ul li:last-child{
+    border-bottom-right-radius: 1em;
+}
+
+
+.menu_player ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+    color: white;
+}
+
+.menu_player li:hover{
+    color: navy;
+    background-color: aqua;
+    transition-duration: 600ms;
+}
+.menu_player a:hover{
+    color: navy;
+    transform: scale(1.1);
+    transition-duration: 600ms;
+}
+
+
+
+
+
+

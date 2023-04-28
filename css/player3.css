@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-cabecera {
+    width: 54%;
+    margin: 0 auto;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    background-color: rgb(8, 103, 192);
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    box-shadow: 0 5px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.contenedor-cabecera h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.contenedor-cabecera h2 {
+    margin: 1em 2em;
+    text-shadow: 2px 2px 2px rgb(63, 62, 62);
+}
+
+.contenedor-cabecera a {
+    display: block;
+    padding: 0.6em 1em;
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px 3px black;
+}
+
+.contenedor-cabecera a:hover{
+    transform: scale(1.2);
+    transition-duration: 600ms;
+}
+
+.contenedor-principal {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 50%;
+    background-color: rgba(8, 103, 192, 0.178);
+    box-shadow: 0 5px 10px black;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.titulo {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.tabla-scores{
+    width: 90%;
+    text-align: center;
+}
+
+.tabla-scores thead{
+    font-size: 2.5em;
+    background-color: rgb(9, 74, 117);
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+
+.tabla-scores thead tr td{
+    padding: 0.5em 1em;
+}
+
+.tabla-scores tbody{
+    font-size: 1.5em;
+}
+.tabla-scores tbody tr td{
+    padding: 0.5em 1em;
+}
+
+.tabla-scores tr:nth-child(even){
+    background-color: aqua;
+}
